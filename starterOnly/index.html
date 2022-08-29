@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
   <head>
     <meta charset="utf-8" />
     <title>Reservation</title>
@@ -11,7 +11,6 @@
   <body>
   <div class="topnav" id="myTopnav">
       <div class="header-logo">
-<<<<<<< HEAD
         <img alt="logo" src="Logo.png"/>
       </div>
       <div class="main-navbar">      
@@ -23,25 +22,7 @@
           <i class="fa fa-bars"></i>
         </a>
       </div>
-=======
-      <img alt="logo" src="Logo.png" width="auto" height="auto" />
     </div>
-    <div class="main-navbar">
-      
-      <a href="#" class="active"><span>Accueil
-      </span></a>
-      <a href="#"><span>Détails de l'évènement</span></a>
-      <a href="#"><span>À propos</span></a>
-      <a href="#"><span>Contact</span></a>
-      <a href="#"><span>Évènements passés</span></a>
-      <a href="javascript:void(0);" class="icon" onclick="editNav()">
-        <i class="fa fa-bars"></i>
-      </a>
-    </div>
-    </div>
->>>>>>> 4bd9d404801cba4d68fe88462c267f5475688064
-  </div>
- 
     <main>
       <div class="hero-section">
         <div class="hero-content">
@@ -64,7 +45,6 @@
           je m'inscris
         </button>
       </div>
-
       <div class="bground">
 <!--******************************MODALE REMERCIMENT********************************************************************************-->  
         <div class="bground2">
@@ -87,17 +67,17 @@
                 <div class="formData">
                   <label for="firstN">Prénom</label><br>
                   <input class="text-control" type="text" id="firstN" name="firstN" placeholder="Votre prénom"/><br>
-                  <p class="hidden error jsHidden" id="fName">Veuillez entrer au minimum 2 caractéres.</p>
-                  <p class="hidden error jsHidden" id="fName1">Le Prénom doit contenir que des lettres.</p>
-                  <p class="hidden error jsHidden" id="fName3">Le Prénom ne doit pas contenir plus de caractéres.</p>
+                  <p class="hidden error" id="fName">Veuillez entrer au minimum 2 caractéres.</p>
+                  <p class="hidden error" id="fName1">Le Prénom doit contenir que des lettres.</p>
+                  <p class="hidden error" id="fName3">Le Prénom ne doit pas contenir plus de caractéres.</p>
                 </div>
                 
                 <div class="formData">
                   <label for="lastN" >Nom</label><br>
                   <input class="text-control" type="text" id="lastN" name="lastN"  placeholder="Votre nom"/><br>
-                  <p class="hidden error jsHidden" id="lName">Veuillez entrer 2 caractères ou plus pour le champ du nom</p>
-                  <p class="hidden error jsHidden" id="lName1">Le nom doit contenir que des lettres.</p>
-                  <p class="hidden error jsHidden" id="lName2">Le Nom ne doit pas contenir plus de 20 lettres.</p>                
+                  <p class="hidden error" id="lName">Veuillez entrer 2 caractères ou plus pour le champ du nom</p>
+                  <p class="hidden error" id="lName1">Le nom doit contenir que des lettres.</p>
+                  <p class="hidden error" id="lName2">Le Nom ne doit pas contenir plus de 20 lettres.</p>                
                 </div>
                 
                 <div class="formData">
@@ -123,33 +103,35 @@
                   
                   <input class="checkbox-input" type="radio" id="location1" name="location[]" value="New York"/>
                     <label class="checkbox-label" for="location1">
-                      <span class="checkbox-icon"></span>New York
+                      <span class="checkbox-icon"></span>
+                      New York
                     </label>
                   
                   <input class="checkbox-input" type="radio" id="location2" name="location[]" value="San Francisco"/>
                     <label class="checkbox-label" for="location2">
-                      <span class="checkbox-icon"></span>San Francisco
+                      <span class="checkbox-icon"></span>
+                      San Francisco
                     </label>
                   
                   <input class="checkbox-input" type="radio" id="location3" name="location[]" value="Seattle"/>
                     <label class="checkbox-label" for="location3">
-                      <span class="checkbox-icon"></span> Seattle
+                      <span class="checkbox-icon"></span> 
+                      Seattle 
                     </label>
                   
-                  <input class="checkbox-input" type="radio" id="location4" name="location[]"value="Chicago"/>
+                  <input class="checkbox-input" type="radio" id="location4" name="location[]" value="Chicago"/>
                     <label class="checkbox-label" for="location4">
-                      <span class="checkbox-icon"></span>Chicago
+                      <span class="checkbox-icon"></span>
+                      Chicago
                     </label>
 
                   <input class="checkbox-input" type="radio" id="location5" name="location[]" value="Boston"/>
                     <label class="checkbox-label" for="location5">
-                      <span class="checkbox-icon"></span> Boston
-                    </label>
+                      <span class="checkbox-icon"></span> Boston</label>
                   
                   <input class="checkbox-input" type="radio" id="location6" name="location[]" value="Portland"/>
                     <label class="checkbox-label" for="location6">
-                      <span class="checkbox-icon"></span> Portland
-                    </label>
+                      <span class="checkbox-icon"></span> Portland </label>
                 </div>
 
                 <p class="hidden error jsHidden" id="selectLocation" >Veuillez séléctioner une ville.</p>

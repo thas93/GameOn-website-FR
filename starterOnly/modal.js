@@ -20,8 +20,7 @@ const eMail = document.getElementById('eMail');
 const birthDate = document.getElementById('birthdate');
 const qtyTournament = document.getElementById('quantity');
 const locationSelect = document.getElementsByName('location');
-const jsError = document.getElementsByClassName('jsHidden');
-
+/****************************************************************************************/
 let isFirstNameValid = false;
 let isLastNameValid = false;
 let isEmailValid = false;
@@ -39,7 +38,7 @@ function launchModal() {
   modalbg.style.display = "block";
 }
 
-//************************************fermer avec la croix***************************************************************************
+//************************************CLOSE-CROSS***************************************************************************
 function closeCross() {
   modalbg.style.display = "none";
   document.querySelector("form").reset();
@@ -55,12 +54,7 @@ function closeCross2() {
 document.getElementById("closeButton").addEventListener("click", closeCross2);
 //*************************************************************************************************
 
-
-
-
-
-
-//**************************************fermer avec le boutton***************************************************************************
+//**************************************CLOSE BUTTON***************************************************************************
 function closeButton() {
   modalbg2.style.display = "none";
   document.querySelector("form").reset();
@@ -69,7 +63,7 @@ function closeButton() {
 document.getElementById("buttonClose").addEventListener("click", closeButton);
 //*************************************************************************************************
 
-//******************************************VERIFICATION PRENOM****************************************************
+//******************************************NAME CHECK****************************************************
 function firstNameCheck() {
   const firstNvalue = firstN.value.trim();
   let nbrOfLetter = firstNvalue.length;
@@ -102,7 +96,7 @@ function firstNameCheck() {
 }
 //*************************************************************************************************
 
-//***********************************************VERIFICATION NOM********************************************************************************
+//***********************************************LAST NAME CHECK********************************************************************************
 
 function lastNameCheck() {
   const lastNvalue = lastN.value.trim();
@@ -146,7 +140,7 @@ function lastNameCheck() {
 }
 //*************************************************************************************************
 
-//*****************************************VERIFICATION EMAIL******************************************************************************
+//*****************************************MAIL CHECK******************************************************************************
 
 function emailCheck() {
   const eMailValue = eMail.value.trim();
@@ -166,7 +160,7 @@ function emailCheck() {
 }
 //*************************************************************************************************
 
-//***********************************VERIFICATION DATE DE NAISSANCE*******************************************************************
+//***********************************DATE OF BIRTH CHECK*******************************************************************
 
 function birthDateCheck() {
   const birthDateValue = birthDate.value;
@@ -184,7 +178,7 @@ function birthDateCheck() {
 }
 //*************************************************************************************************
 
-//***********************************************VERIFICATION TOURNOIS***************************************************************************
+//***********************************************TOURNEMENT CHECK***************************************************************************
 
 function tournementCheck() {
   const qtyTournamentValue = qtyTournament.value;
@@ -209,7 +203,7 @@ function tournementCheck() {
 }
 //*************************************************************************************************
 
-//***************************************VERIFICATION DES VILLES*************************************************************************
+//***************************************LOCQTION CHECK*************************************************************************
 
 function locationCheck() {
 
@@ -225,7 +219,7 @@ function locationCheck() {
 }
 //*************************************************************************************************
 
-//*********************************VERIFICATION TERME ET CONDITION******************************************************************
+//*********************************CONDITION CHECK******************************************************************
 
 function conditionCheck() {
   if (checkbox1.checked) {  
@@ -241,7 +235,7 @@ function conditionCheck() {
 }
 //************************************************************************************************* */
 
-//VERIFICATION/VALIDATION DE TOUS LES CHAMPS*******************************************************
+//************************VALIDATION CHECK*******************************************************
 form.addEventListener('submit', e => {
   e.preventDefault();
   firstNameCheck();
